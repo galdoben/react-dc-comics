@@ -1,0 +1,12 @@
+main img {
+    width: 40px;
+}
+
+footer {
+    color: white;
+    background-image: url(../../public/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+}
