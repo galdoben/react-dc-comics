@@ -1,30 +1,21 @@
-const Header = () => {
-  return (
-    <header className="d-flex">
-      <nav className="navbar bg-body-tertiary">
-        <div className="container">
-          <a className="navbar-brand" href="#">
-            <img src="../../public/img/dc-logo.png" />
-          </a>
-        </div>
-        <div >
-          <ul className="navbar-nav d-flex">
-            <li> <a className="nav-link" href="#" Features>MOVIES</a></li>
-            <li> <a className="nav-link" href="#" Features>MOVIES</a></li>
-            <li> <a className="nav-link" href="#" Features>MOVIES</a></li>
-            <li> <a className="nav-link" href="#" Features>MOVIES</a></li>
-            <li> <a className="nav-link" href="#" Features>MOVIES</a></li>
-            <li> <a className="nav-link" href="#" Features>MOVIES</a></li>
-            <li> <a className="nav-link" href="#" Features>MOVIES</a></li>
-            <li> <a className="nav-link" href="#" Features>MOVIES</a></li>
-            <li> <a className="nav-link" href="#" Features>MOVIES</a></li>
-            <li> <a className="nav-link" href="#" Features>MOVIES</a></li>
-          </ul >
-        </div >
-      </nav >
+import Navbar from "./Navbar";
 
-    </header >
+const Header = (props) => {
+  const { links } = props
+  return (
+    <header>
+      <div className="container d-flex">
+        <div className="logodc">
+          <img src="../../public/img/dc-logo.png" />
+        </div>
+        <div className="nav header">
+          <ul>
+            <Navbar links={links} />
+          </ul >
+        </div>
+
+      </div>
+    </header>
   )
 }
-
 export default Header

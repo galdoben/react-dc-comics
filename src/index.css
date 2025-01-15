@@ -1,8 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header ul li {
+    display: inline;
+
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 main img {
     width: 40px;
 }
 
-footer {
+.subFooter {
     color: white;
     background-image: url(../../public/img/footer-bg.jpg);
     background-repeat: no-repeat;
