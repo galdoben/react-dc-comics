@@ -2,7 +2,8 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css'
+import './index.css';
+import comics from './data/comics';
 
 
 const links = [
@@ -19,11 +20,11 @@ const links = [
 ]
 
 function App() {
-
+  const comicsCard = [...comics]
   return (
     <>
       <Header links={links} />
-      <Main />
+      <Main comics={comicsCard} />
       <Footer />
     </>
   )

@@ -1,16 +1,14 @@
 
 const Navbar = (props) => {
-    const { links } = props
+    const { links } = props;
     return (
-        {
-            links.map((link, index) => {
-                return (
-                    <li key={index}>
-                        <a href={link.url} >{link.text}</a>
-                    </li>
-                )
-            }
-            )
-        }
-}
-export default Navbar
+        <ul>
+            {links.map((link, index) => (
+                <li key={index}>
+                    <a href={link.url}>{link.text}</a>
+                </li>
+            ))}
+        </ul>
+    );
+};
+export default Navbar;
